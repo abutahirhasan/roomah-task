@@ -1,0 +1,220 @@
+/*CSS Table Of Content Ends Here*/
+:root {
+  --body: #fff;
+  --black-clr: #0C0C0E;
+  --white-clr: #fff;
+  --pragraph-clr: #706767;
+  --theme-clr: #01A66B;
+}
+
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+html {
+  scroll-behavior: initial !important;
+}
+
+body {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.d-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-top-section {
+  padding: 32px 0 12px;
+  border-bottom: 1px solid rgba(112, 103, 103, 0.2039215686);
+}
+.header-top-section .header-top-info {
+  gap: 32px;
+}
+.header-top-section .header-top-info li a {
+  font-size: 12px;
+  color: var(--pragraph-clr);
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .header-top-section {
+    padding: 15px 0 16px;
+  }
+}
+
+.hero-section .hero-content {
+  padding-top: 80px;
+  max-width: 950px;
+  margin: 0 auto -20px;
+  z-index: 99;
+  position: relative;
+  text-align: center;
+}
+.hero-section .hero-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--black-clr);
+  margin-bottom: 24px;
+}
+.hero-section .hero-content h1 .architecture-small img {
+  width: 70px;
+  height: 70px;
+}
+.hero-section .hero-content p {
+  max-width: 690px;
+  margin: 0 auto 44px;
+}
+.hero-section .hero-content .rent-trip-wrap {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: var(--white-clr);
+  border-radius: 100px;
+  padding: 12px 16px 12px 30px;
+}
+.hero-section .hero-content .rent-trip-wrap .rent-item.custom-border {
+  border-left: 2px solid #ebebeb;
+  padding-left: 30px;
+}
+.hero-section .hero-content .rent-trip-wrap .rent-item .s-info {
+  font-size: 14px;
+  color: var(--pragraph-clr);
+  display: block;
+  margin-bottom: 4px;
+}
+.hero-section .hero-content .rent-trip-wrap .rent-item .nice-select {
+  padding: 0 0;
+  border: unset;
+  width: initial;
+}
+.hero-section .hero-content .rent-trip-wrap .rent-item .nice-select .current {
+  font-size: 16px;
+  color: var(--black-clr);
+  font-weight: 500;
+}
+.hero-section .hero-content .rent-trip-wrap .rent-item .nice-select .list {
+  background: var(--white-clr);
+  width: 100%;
+  width: 200px;
+  right: initial;
+  left: 0;
+}
+.hero-section .hero-content .rent-trip-wrap .rent-item .nice-select .list li {
+  font-size: 16px;
+  color: var(--black-clr);
+}
+.hero-section .hero-content .rent-trip-wrap .search-btn {
+  width: 40px;
+  height: 40px;
+  background: var(--theme-clr);
+}
+.hero-section .hero-content .rent-trip-wrap .search-btn i {
+  color: var(--white-clr);
+}
+@media (max-width: 1199px) {
+  .hero-section .hero-content {
+    margin: 0 auto 50px;
+    padding-top: 60px;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 54px;
+    margin-bottom: 18px;
+  }
+  .hero-section .hero-content h1 .architecture-small img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .hero-section .hero-content {
+    padding-top: 60px;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 54px;
+    margin-bottom: 18px;
+  }
+  .hero-section .hero-content h1 .architecture-small img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-section .hero-content {
+    padding-top: 50px;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 16px;
+  }
+  .hero-section .hero-content h1 .architecture-small img {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-section .hero-content {
+    padding-top: 40px;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 14px;
+  }
+  .hero-section .hero-content h1 .architecture-small img {
+    width: 35px;
+    height: 35px;
+  }
+  .hero-section .hero-content .rent-trip-wrap {
+    border-radius: 4px;
+    padding: 12px 14px 12px 14px;
+    gap: 7px 50px;
+  }
+  .hero-section .hero-content .rent-trip-wrap .rent-item.custom-border {
+    border-left: unset;
+    padding-left: 0px;
+  }
+  .hero-section .hero-content .rent-trip-wrap .rent-item .s-info {
+    margin-bottom: 2px;
+  }
+  .hero-section .hero-content .rent-trip-wrap .rent-item .nice-select .list {
+    width: 120px;
+  }
+  .hero-section .hero-content .rent-trip-wrap .search-btn {
+    width: 36px;
+    height: 36px;
+  }
+}/*# sourceMappingURL=main.css.map */
