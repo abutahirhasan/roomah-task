@@ -6,6 +6,23 @@
 	"use strict";
 
 	$(document).ready(function () {
+		//Sticky Style
+		var fixed_top = $(".header-section");
+		if ($(window).scrollTop() > 50) {
+			fixed_top.addClass("animated fadeInDown header-fixed");
+		} else {
+			fixed_top.removeClass("animated fadeInDown header-fixed");
+		}
+
+		// Navbar custom
+		$(".navbar-toggle-btn").on("click", function () {
+			$(".navbar-toggle-item").slideToggle(300);
+			$("body").toggleClass("overflow-hidden");
+			$(this).toggleClass("open");
+		});
+		$(".menu-item button").on("click", function () {
+			$(this).siblings("ul").slideToggle(300);
+		});
 
 		// Nice Select Start
 		$("select").niceSelect();
