@@ -22,12 +22,19 @@
 	border-top: 1px solid #70676734;
 	border-bottom: 1px solid #70676734;
 	width: 100%;
-	position: fixed;
-	top: 0;
 	z-index: 100;
 	z-index: 99;
 	background: rgba(var(--n6), 1);
-	// margin-top: 70px;
+	@include breakpoint(max-lg){
+		margin-top: 58px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: var(--white-clr);
+	}
+	@include breakpoint(max-sm){
+		margin-top: 0;
+	}
 	.nav-brand {
 		max-width: 265px;
 		object-fit: contain;
@@ -130,6 +137,9 @@
 						}
 					}
 				}
+				.line {
+					height: 10px;
+				}
 			}
 			@include breakpoint(lg) {
 				.menu-item {
@@ -157,12 +167,10 @@
 					transform: translateY(20px);
 					text-wrap: nowrap;
 					transition: all 0.4s;
-					// display: initial !important;
 					background: var(--white-clr);
 					border: 1px solid #ebebeb;
 					z-index: 10;
 					width: 200px;
-					// pointer-events: none;
 					.sub-menu {
 						left: 100%;
 						top: -20px;
@@ -175,7 +183,6 @@
 							opacity: 1;
 							visibility: visible;
 							transform: translateY(0);
-							// pointer-events: auto;
 						}
 					}
 				}
@@ -240,7 +247,7 @@
 			padding: 8px 29px 8px 16px;
 			.nice-select {
 				padding: 2px 0;
-				width: initial; 
+				width: initial;
 				border: unset;
 				.current {
 					font-size: 16px;
@@ -252,7 +259,7 @@
 					right: initial;
 					left: 0;
 					z-index: 1;
-					li{
+					li {
 						background: var(--white-clr);
 					}
 				}
@@ -268,7 +275,7 @@
 		padding-top: 80px;
 		max-width: 950px;
 		margin: 0 auto -20px;
-		z-index: 99;
+		z-index: 9;
 		position: relative;
 		text-align: center;
 		h1 {
@@ -353,7 +360,7 @@
 	}
 	@include breakpoint(max-lg) {
 		.hero-content {
-			padding-top: 60px;
+			padding-top: 120px;
 			h1 {
 				font-size: 46px;
 				font-weight: 600;
@@ -370,7 +377,7 @@
 	}
 	@include breakpoint(max-md) {
 		.hero-content {
-			padding-top: 50px;
+			padding-top: 110px;
 			h1 {
 				font-size: 36px;
 				font-weight: 600;
@@ -387,7 +394,7 @@
 	}
 	@include breakpoint(max-sm) {
 		.hero-content {
-			padding-top: 40px;
+			padding-top: 100px;
 			h1 {
 				font-size: 29px;
 				font-weight: 600;

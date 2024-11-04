@@ -76,11 +76,23 @@ h6 {
   border-top: 1px solid rgba(112, 103, 103, 0.2039215686);
   border-bottom: 1px solid rgba(112, 103, 103, 0.2039215686);
   width: 100%;
-  position: fixed;
-  top: 0;
   z-index: 100;
   z-index: 99;
   background: rgba(var(--n6), 1);
+}
+@media (max-width: 991px) {
+  .header-section {
+    margin-top: 58px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--white-clr);
+  }
+}
+@media (max-width: 575px) {
+  .header-section {
+    margin-top: 0;
+  }
 }
 .header-section .nav-brand {
   max-width: 265px;
@@ -209,6 +221,9 @@ h6 {
     top: 11px;
     z-index: -1;
   }
+  .header-section .main-navbar .custom-nav .line {
+    height: 10px;
+  }
 }
 @media (min-width: 992px) {
   .header-section .main-navbar .custom-nav .menu-item button:hover button::after {
@@ -320,7 +335,7 @@ h6 {
   padding-top: 80px;
   max-width: 950px;
   margin: 0 auto -20px;
-  z-index: 99;
+  z-index: 9;
   position: relative;
   text-align: center;
 }
@@ -399,7 +414,7 @@ h6 {
 }
 @media (max-width: 991px) {
   .hero-section .hero-content {
-    padding-top: 60px;
+    padding-top: 120px;
   }
   .hero-section .hero-content h1 {
     font-size: 46px;
@@ -414,7 +429,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .hero-section .hero-content {
-    padding-top: 50px;
+    padding-top: 110px;
   }
   .hero-section .hero-content h1 {
     font-size: 36px;
@@ -429,7 +444,7 @@ h6 {
 }
 @media (max-width: 575px) {
   .hero-section .hero-content {
-    padding-top: 40px;
+    padding-top: 100px;
   }
   .hero-section .hero-content h1 {
     font-size: 29px;
